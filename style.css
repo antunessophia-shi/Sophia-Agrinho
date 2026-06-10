@@ -1,0 +1,538 @@
+:root {
+
+    --primary-color:#2E6B3E;
+    --secondary-color:#E6B84A;
+    --accent-color:#3A8FB7;
+    --dark-color:#263326;
+
+    --light-bg:#EAF4E3;
+
+    --white:#ffffff;
+    --text-color:#263326;
+
+    --font-family:'Segoe UI',Tahoma,Geneva,Verdana,sans-serif;
+
+    --transition:all .3s ease;
+
+}
+
+
+
+* {
+
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+
+}
+
+
+
+html {
+
+    scroll-behavior:smooth;
+
+}
+
+
+
+body {
+
+    font-family:var(--font-family);
+
+    background:var(--light-bg);
+
+    color:var(--text-color);
+
+    line-height:1.6;
+
+}
+
+
+
+a {
+
+    text-decoration:none;
+
+    color:inherit;
+
+}
+
+
+
+/* =========================
+HEADER
+========================= */
+
+
+header {
+
+    background:var(--primary-color);
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:20px 5%;
+
+    position:sticky;
+
+    top:0;
+
+    z-index:1000;
+
+    box-shadow:0 3px 15px rgba(0,0,0,.15);
+
+}
+
+
+
+.logo h1 {
+
+    color:white;
+
+}
+
+
+
+nav ul {
+
+    display:flex;
+
+    gap:25px;
+
+    list-style:none;
+
+}
+
+
+
+nav a {
+
+    color:white;
+
+    font-weight:bold;
+
+}
+
+
+
+nav a:hover {
+
+    color:var(--secondary-color);
+
+}
+
+
+
+
+
+/* =========================
+INÍCIO
+========================= */
+
+
+.inicio {
+
+    min-height:70vh;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    align-items:center;
+
+    text-align:center;
+
+    padding:80px 20px;
+
+    color:white;
+
+
+    background:
+
+    linear-gradient(
+        rgba(46,107,62,.80),
+        rgba(46,107,62,.80)
+    ),
+
+    url('https://images.unsplash.com/photo-1500937386664-56d1dfef3854?w=1920')
+
+    center/cover;
+
+}
+
+
+
+.inicio h2 {
+
+    font-size:42px;
+
+    margin-bottom:20px;
+
+    color:var(--light-bg);
+
+}
+
+
+
+.inicio p {
+
+    max-width:900px;
+
+    font-size:18px;
+
+}
+
+
+
+
+
+/* =========================
+GERAL
+========================= */
+
+
+main {
+
+    max-width:1200px;
+
+    margin:auto;
+
+    padding:60px 20px;
+
+}
+
+
+
+section {
+
+    margin-bottom:80px;
+
+}
+
+
+
+h2 {
+
+    text-align:center;
+
+    font-size:34px;
+
+    color:var(--primary-color);
+
+    margin-bottom:40px;
+
+}
+
+
+
+
+
+/* =========================
+PILARES
+========================= */
+
+
+.cards {
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:25px;
+
+}
+
+
+
+.cartao {
+
+
+    background:rgb(172, 245, 120) !important;
+
+
+    display:flex;
+
+
+    justify-content:space-between;
+
+    align-items:center;
+
+
+
+    padding:35px;
+
+
+
+    border-radius:18px;
+
+
+    border-left:7px solid var(--primary-color);
+
+
+
+    box-shadow:0 8px 20px rgba(0,0,0,.06);
+
+
+
+    transition:var(--transition);
+
+}
+
+
+
+.cartao:hover {
+
+    transform:translateY(-5px);
+
+    border-left-color:var(--accent-color);
+
+}
+
+
+
+.cartao div:first-child {
+
+    width:80%;
+
+}
+
+
+
+.cartao h3 {
+
+    color:var(--primary-color);
+
+    margin-bottom:15px;
+
+}
+
+
+
+.cartao p {
+
+    text-align:justify;
+
+}
+
+
+
+
+
+.icone {
+
+
+    width:90px;
+
+    height:90px;
+
+
+    border-radius:50%;
+
+
+    background:var(--light-bg);
+
+
+    display:flex;
+
+
+    align-items:center;
+
+
+    justify-content:center;
+
+
+
+    font-size:45px;
+
+}
+
+
+
+
+
+/* =========================
+TECNOLOGIA
+========================= */
+
+
+.tecnologia {
+
+
+    background:white;
+
+
+    padding:50px;
+
+
+    border-radius:20px;
+
+
+
+    border-left:6px solid var(--primary-color);
+
+
+}
+
+
+
+
+
+.conteudo {
+
+
+    display:flex;
+
+    gap:40px;
+
+
+    align-items:center;
+
+
+}
+
+
+
+
+
+.texto-tech {
+
+
+    flex:1;
+
+
+    font-size:17px;
+
+
+}
+
+
+
+
+
+
+.imagem-tech {
+
+
+    flex:1;
+
+
+}
+
+
+
+.imagem-tech img {
+
+
+    width:100%;
+
+
+    border-radius:20px;
+
+
+}
+
+
+
+
+
+
+
+/* =========================
+RODAPÉ
+========================= */
+
+
+footer {
+
+
+    background:var(--dark-color);
+
+
+    color:white;
+
+
+    text-align:center;
+
+
+    padding:30px;
+
+
+}
+
+
+
+
+
+
+
+
+/* =========================
+RESPONSIVO
+========================= */
+
+
+@media(max-width:768px) {
+
+
+    header {
+
+        flex-direction:column;
+
+        gap:20px;
+
+    }
+
+
+
+    nav ul {
+
+        flex-direction:column;
+
+        text-align:center;
+
+    }
+
+
+
+    .inicio h2 {
+
+        font-size:30px;
+
+    }
+
+
+
+    .cartao {
+
+        flex-direction:column;
+
+        gap:25px;
+
+        text-align:center;
+
+    }
+
+
+
+    .cartao div:first-child {
+
+        width:100%;
+
+    }
+
+
+
+    .conteudo {
+
+        flex-direction:column;
+
+    }
+
+
+}
